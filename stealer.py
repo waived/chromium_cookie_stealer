@@ -4,7 +4,7 @@ def find_db(_path):
     # Walk through all directories and subdirectories
     for root, dirs, files in os.walk(_path):
         if 'Cookies' in files:
-            # If found, return the full path
+            # ff found, return the full path
             return os.path.join(root, 'Cookies')
     
     # generic error if database not found
@@ -13,7 +13,7 @@ def find_db(_path):
 def main():
     dump = []
     
-    # confirm firefox root directory exists
+    # confirm chromium root directory exists
     try:
         cdir = os.path.expanduser("~/.config/chromium/Default/")
     
